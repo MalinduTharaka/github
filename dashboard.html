@@ -1,1 +1,114 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+    background: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #sidebar {
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    transition: all 0.3s;
+  }
+  
+  #sidebar .nav-link {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+  }
+  
+  #sidebar .nav-link.active,
+  #sidebar .nav-link:hover {
+    background-color: #1f1f1f;
+    color: #4dc0b5;
+  }
+  
+  #page-content-wrapper {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+  }
+  
+  .f-card {
+    background: #1e1e1e;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  .f-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .f-card .card-title {
+    color: #4dc0b5;
+  }
+  
+  .btn-primary {
+    background-color: #4dc0b5;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #36a08f;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="bg-dark text-light">
+      <div class="sidebar-header">
+        <h4 class="text-center">Dashboard</h4>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="page-content-wrapper">
+      <main class="container-fluid">
+        <h1 class="mt-4">Welcome to Dashboard</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card f-card">
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae veniam, quidem dolorum possimus tenetur, facere deleniti quo dolor vero, aperiam ipsa officia voluptates tempore nesciunt laudantium ullam amet. Magnam!</p>
+                <a href="#" class="btn btn-primary">Click here</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
